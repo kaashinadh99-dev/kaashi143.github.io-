@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#03060c">
+  <meta name="theme-color" content="#080b14">
   <meta name="description" content="Dipin Raj — developer, builder and creator. Explore projects, skills and ways to connect.">
   <title>Dipin Raj — Developer Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -13,46 +13,12 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <!-- Cinematic Hacker's Lab Backdrop -->
-  <div class="lab-backdrop" aria-hidden="true">
-    <div class="nebula-glow nebula-primary"></div>
-    <div class="nebula-glow nebula-secondary"></div>
-    <div class="nebula-glow nebula-accent"></div>
-
-    <div class="perspective-grid"></div>
-    <canvas id="hacker-lab-canvas"></canvas>
-
-    <div class="radar-ring ring-outer"></div>
-    <div class="radar-ring ring-inner"></div>
-    <div class="radar-sweep"></div>
-
-    <div class="crt-scanlines"></div>
-    <div class="film-grain"></div>
-    <div class="edge-vignette"></div>
-
-    <!-- Corner Precision HUD -->
-    <div class="hud-corner hud-tl">
-      <div class="hud-line"><span class="hud-dot"></span> LAB.ENV // <strong>KAASHINADH-OS v4.2</strong></div>
-      <div class="hud-sub">LOC: 11.6667° N, 75.6500° E [KERALA_NODE]</div>
-    </div>
-
-    <div class="hud-corner hud-tr">
-      <div class="hud-line">UPLINK: <strong id="hud-uplink">99.98% STABLE</strong></div>
-      <div class="hud-sub" id="hud-clock">UTC+05:30 // SYNCED</div>
-    </div>
-
-    <div class="hud-corner hud-bl">
-      <div class="hud-terminal-feed" id="hud-feed">
-        <span>&gt; init neural_mesh.py --secure</span>
-        <span>&gt; listening on port 8080...</span>
-      </div>
-    </div>
-
-    <div class="hud-corner hud-br">
-      <div class="hud-line">VECTOR: <strong id="hud-coords">X:0000 Y:0000</strong></div>
-      <div class="hud-sub">CLICK ANYWHERE TO PING SONAR</div>
-    </div>
-  </div>
+  <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
+  <div class="cyber-grid" aria-hidden="true"></div>
+  <div class="scanline" aria-hidden="true"></div>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="ambient ambient-one" aria-hidden="true"></div>
+  <div class="ambient ambient-two" aria-hidden="true"></div>
 
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Dipin Raj home">
@@ -121,10 +87,10 @@
         <h2>Things I work <span class="gradient-text">with.</span></h2>
       </div>
       <div class="skill-grid">
-        <article class="skill-card spotlight-card"><span class="skill-number">01</span><div class="skill-symbol">Py</div><h3>Python</h3><p>Automation, application logic and API integrations.</p><span class="skill-line"></span></article>
-        <article class="skill-card spotlight-card"><span class="skill-number">02</span><div class="skill-symbol">&lt;/&gt;</div><h3>Web Development</h3><p>Responsive interfaces with HTML, CSS and JavaScript.</p><span class="skill-line"></span></article>
-        <article class="skill-card spotlight-card"><span class="skill-number">03</span><div class="skill-symbol">⌘</div><h3>API Integration</h3><p>Connecting services, handling data and building workflows.</p><span class="skill-line"></span></article>
-        <article class="skill-card spotlight-card"><span class="skill-number">04</span><div class="skill-symbol">◈</div><h3>UI / UX</h3><p>Dark interfaces, interaction details and visual systems.</p><span class="skill-line"></span></article>
+        <article class="skill-card"><span class="skill-number">01</span><div class="skill-symbol">Py</div><h3>Python</h3><p>Automation, application logic and API integrations.</p><span class="skill-line"></span></article>
+        <article class="skill-card"><span class="skill-number">02</span><div class="skill-symbol">&lt;/&gt;</div><h3>Web Development</h3><p>Responsive interfaces with HTML, CSS and JavaScript.</p><span class="skill-line"></span></article>
+        <article class="skill-card"><span class="skill-number">03</span><div class="skill-symbol">⌘</div><h3>API Integration</h3><p>Connecting services, handling data and building workflows.</p><span class="skill-line"></span></article>
+        <article class="skill-card"><span class="skill-number">04</span><div class="skill-symbol">◈</div><h3>UI / UX</h3><p>Dark interfaces, interaction details and visual systems.</p><span class="skill-line"></span></article>
       </div>
       <p class="skills-footnote"><span class="pulse-dot"></span> A growing toolkit — always learning, testing and improving.</p>
     </section>
@@ -138,7 +104,7 @@
         <p class="projects-intro">A few projects and experiments from my build list. More work will be added as it evolves.</p>
       </div>
       <div class="project-list">
-        <article class="project-card project-featured spotlight-card">
+        <article class="project-card project-featured">
           <div class="project-visual music-visual">
             <div class="music-bars"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></div>
             <div class="visual-label">CLUBBY<span> / MUSIC</span></div>
@@ -152,7 +118,7 @@
             <a class="project-link" href="https://github.com/kaashi143" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
           </div>
         </article>
-        <article class="project-card spotlight-card">
+        <article class="project-card">
           <div class="project-visual pulse-visual">
             <div class="pulse-disc"><span></span></div>
             <div class="visual-label">PULSE<span> / MUSIC</span></div>
@@ -166,7 +132,7 @@
             <a class="project-link" href="https://github.com/kaashi143" target="_blank" rel="noopener noreferrer">Explore on GitHub <span>↗</span></a>
           </div>
         </article>
-        <article class="project-card spotlight-card">
+        <article class="project-card">
           <div class="project-visual lab-visual">
             <div class="lab-window"><div class="lab-dots"><i></i><i></i><i></i></div><div class="lab-code"><b>const</b> ideas = [<br>&nbsp; <em>"build"</em>,<br>&nbsp; <em>"learn"</em>,<br>&nbsp; <em>"repeat"</em><br>];<br><span class="cursor">_</span></div></div>
             <div class="visual-caption">EXPERIMENT / 003</div>
@@ -187,11 +153,11 @@
         <p class="eyebrow">04 / CONTACT</p>
         <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
         <p class="contact-copy">Have a project, collaboration idea or just want to say hello? My inbox is open.</p>
-        <a class="button button-primary contact-button" href="mailto:dipin2486@gmail.com?subject=Hello%20Dipin">Email me <span>↗</span></a>
+        <a class="button button-primary contact-button" href="mailto:hello@example.com?subject=Hello%20Dipin">Email me <span>↗</span></a>
         <div class="contact-links">
           <a href="https://github.com/kaashi143" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
           <a href="https://www.instagram.com/3rr0r504/" target="_blank" rel="noopener noreferrer">INSTAGRAM <span>↗</span></a>
-          <a href="mailto:dipin2486@gmail.com">EMAIL <span>↗</span></a>
+          <a href="mailto:hello@example.com">EMAIL <span>↗</span></a>
         </div>
       </div>
     </section>
