@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="theme-color" content="#080b14">
+  <meta name="theme-color" content="#05080f">
   <meta name="description" content="Dipin Raj — developer, builder and creator. Explore projects, skills and ways to connect.">
   <title>Dipin Raj — Developer Portfolio</title>
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
@@ -13,12 +13,27 @@
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <canvas id="matrix-canvas" class="matrix-canvas" aria-hidden="true"></canvas>
-  <div class="cyber-grid" aria-hidden="true"></div>
-  <div class="scanline" aria-hidden="true"></div>
-  <div class="noise" aria-hidden="true"></div>
-  <div class="ambient ambient-one" aria-hidden="true"></div>
-  <div class="ambient ambient-two" aria-hidden="true"></div>
+  <!-- Multi-Layered Hacker's Lab Background -->
+  <div class="lab-backdrop" aria-hidden="true">
+    <canvas id="hacker-lab-canvas"></canvas>
+    <div class="cyber-grid"></div>
+    <div class="radar-sweep"></div>
+    <div class="ambient ambient-one"></div>
+    <div class="ambient ambient-two"></div>
+    <div class="scanlines"></div>
+    <div class="vignette"></div>
+
+    <!-- Subtle Fixed Lab Telemetry HUD -->
+    <div class="lab-hud hud-top-left">
+      <span class="hud-bracket">[</span> SYS.NODE // KAASHINADH-LAB <span class="hud-bracket">]</span>
+    </div>
+    <div class="lab-hud hud-bottom-left">
+      <span>NET.IO: <strong id="hud-packet">ENCRYPTED // 256-BIT</strong></span>
+    </div>
+    <div class="lab-hud hud-bottom-right">
+      <span id="hud-coords">CURSOR: 0000.0000</span>
+    </div>
+  </div>
 
   <header class="site-header">
     <a class="brand" href="#home" aria-label="Dipin Raj home">
@@ -153,11 +168,11 @@
         <p class="eyebrow">04 / CONTACT</p>
         <h2>Have an idea?<br><span class="gradient-text">Let's build it.</span></h2>
         <p class="contact-copy">Have a project, collaboration idea or just want to say hello? My inbox is open.</p>
-        <a class="button button-primary contact-button" href="mailto:hello@example.com?subject=Hello%20Dipin">Email me <span>↗</span></a>
+        <a class="button button-primary contact-button" href="mailto:dipin2486@gmail.com?subject=Hello%20Dipin">Email me <span>↗</span></a>
         <div class="contact-links">
           <a href="https://github.com/kaashi143" target="_blank" rel="noopener noreferrer">GITHUB <span>↗</span></a>
           <a href="https://www.instagram.com/3rr0r504/" target="_blank" rel="noopener noreferrer">INSTAGRAM <span>↗</span></a>
-          <a href="mailto:hello@example.com">EMAIL <span>↗</span></a>
+          <a href="mailto:dipin2486@gmail.com">EMAIL <span>↗</span></a>
         </div>
       </div>
     </section>
