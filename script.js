@@ -69,3 +69,78 @@ document.querySelectorAll(".skill-card, .project-card").forEach((card) => {
   window.addEventListener("resize", () => { resize(); ctx.clearRect(0, 0, width, height); }, {passive:true});
   document.addEventListener("visibilitychange", () => document.hidden ? stop() : start());
 })();
+/* ==========================================
+   HACKER SYSTEM BOOT SEQUENCE
+========================================== */
+
+document.addEventListener("DOMContentLoaded", () => {
+  const bootScreen = document.getElementById("boot-screen");
+  const bootOutput = document.getElementById("boot-output");
+  const progressBar = document.getElementById("boot-progress-bar");
+  const accessMessage = document.getElementById("boot-access");
+
+  if (!bootScreen || !bootOutput || !progressBar) return;
+
+  const bootMessages = [
+    "Establishing secure connection...",
+    "Loading Dipin Raj portfolio system...",
+    "Initializing interface modules...",
+    "Loading creative projects...",
+    "Checking system integrity...",
+    "Connecting developer workspace...",
+    "Loading visual environment...",
+    "System initialization complete."
+  ];
+
+  let currentLine = 0;
+  const lineDelay = 340;
+
+  function showBootLine() {
+    if (currentLine >= bootMessages.length) {
+      progressBar.style.width = "100%";
+
+      if (accessMessage) {
+        accessMessage.classList.add("visible");
+      }
+
+      setTimeout(() => {
+        bootScreen.classList.add("boot-hidden");
+
+        document.body.classList.add("system-ready");
+
+        setTimeout(() => {
+          bootScreen.remove();
+        }, 1000);
+      }, 700);
+
+      return;
+    }
+
+    const line = document.createElement("div");
+    line.className = "boot-line";
+    line.textContent = bootMessages[currentLine];
+
+    bootOutput.appendChild(line);
+
+    const progress =
+      ((currentLine + 1) / bootMessages.length) * 100;
+
+    progressBar.style.width = progress + "%";
+
+    currentLine++;
+
+    setTimeout(showBootLine, lineDelay);
+  }
+
+  showBootLine();
+});
+
+/* ==========================================
+   DYNAMIC COPYRIGHT YEAR
+========================================== */
+
+const yearElement = document.getElementById("year");
+
+if (yearElement) {
+  yearElement.textContent = new Date().getFullYear();
+}
