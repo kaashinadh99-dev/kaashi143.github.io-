@@ -1,35 +1,517 @@
+
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#050a10"><meta name="description" content="Dipin Raj — Developer, builder and creator. A futuristic personal portfolio.">
-  <title>Dipin Raj | Cyber Portfolio</title>
-  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml"><link rel="stylesheet" href="style.css">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#050a10">
+  <meta name="description" content="Dipin Raj — Developer, builder and creator. A futuristic personal portfolio.">
+  <title>Dipin Raj | кαѕнιиα∂н</title>
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div class="gif-wallpaper" aria-hidden="true"></div><div class="gif-wallpaper-overlay" aria-hidden="true"></div>
-  <div class="ambient"></div><div class="grid-bg"></div><div class="scanlines"></div>
-  <header class="topbar"><a class="brand" href="#home" aria-label="Home"><span class="brand-mark">D<span>_</span></span><span class="brand-name">DIPIN<span>RAJ</span></span></a><div class="top-meta"><span class="online-dot"></span><span>PORTFOLIO // ONLINE</span></div><button class="menu-btn" id="menuBtn" aria-label="Toggle menu">☰</button></header>
+
+  <!-- GIPHY LIVE ANIMATED BACKGROUND -->
+  <div class="gif-wallpaper" aria-hidden="true"></div>
+  <div class="gif-wallpaper-overlay" aria-hidden="true"></div>
+
+  <!-- Background effects -->
+  <div class="ambient"></div>
+  <div class="grid-bg"></div>
+  <div class="scanlines"></div>
+
+  <!-- HEADER -->
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="Home">
+      <span class="brand-mark">D<span>_</span></span>
+      <span class="brand-name">DIPIN<span>RAJ</span></span>
+    </a>
+
+    <div class="top-meta">
+      <span class="online-dot"></span>
+      <span>PORTFOLIO // ONLINE</span>
+    </div>
+
+    <button class="menu-btn" id="menuBtn" aria-label="Toggle menu">
+      ☰
+    </button>
+  </header>
+
   <main>
+
+    <!-- HOME / HERO -->
     <section id="home" class="section hero-section">
-      <div class="eyebrow"><span class="line"></span> DEVELOPER PROFILE <span class="pill">V.01</span></div>
-      <div class="hero-card panel">
-        <div class="portrait-wrap"><div class="portrait-grid"></div><div class="portrait-core"><div class="avatar-symbol">DR</div><div class="avatar-ring"></div></div><div class="portrait-tag">USER / 001</div><div class="corner corner-tl"></div><div class="corner corner-br"></div></div>
-        <div class="hero-copy"><p class="small-label">HELLO, I'M</p><h1>Dipin <span>Raj</span></h1><div class="role-line"><span class="cursor"></span><span id="typedRole">Developer / Builder / Creator</span></div><p class="intro">Building digital experiences, tools and experiments with code.</p><div class="hero-actions"><a class="button primary" href="#projects">EXPLORE PROJECTS <span>↗</span></a><a class="button secondary" href="#contact">CONTACT ME</a></div></div>
+
+      <div class="eyebrow">
+        <span class="line"></span>
+        DEVELOPER PROFILE
+        <span class="pill">V.01</span>
       </div>
-      <div class="hero-stats"><div class="stat"><b>04<span>+</span></b><small>TECH AREAS</small></div><div class="stat"><b>03<span>+</span></b><small>PROJECTS</small></div><div class="stat"><b>∞</b><small>IDEAS</small></div></div>
-      <div class="scroll-hint"><span class="scroll-icon">↓</span> SCROLL TO EXPLORE</div>
+
+      <div class="hero-card panel">
+
+        <div class="portrait-wrap">
+          <div class="portrait-grid"></div>
+
+          <div class="portrait-core">
+            <div class="avatar-symbol">DR</div>
+            <div class="avatar-ring"></div>
+          </div>
+
+          <div class="portrait-tag">USER / 001</div>
+
+          <div class="corner corner-tl"></div>
+          <div class="corner corner-br"></div>
+        </div>
+
+        <div class="hero-copy">
+          <p class="small-label">HELLO, I'M</p>
+
+          <h1>Dipin <span>Raj</span></h1>
+
+          <div class="role-line">
+            <span class="cursor"></span>
+            <span id="typedRole">Developer / Builder / Creator</span>
+          </div>
+
+          <p class="intro">
+            Building digital experiences, tools and experiments with code.
+          </p>
+
+          <div class="hero-actions">
+            <a class="button primary" href="#projects">
+              EXPLORE PROJECTS <span>↗</span>
+            </a>
+
+            <a class="button secondary" href="#contact">
+              CONTACT ME
+            </a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- STATISTICS -->
+      <div class="hero-stats">
+        <div class="stat">
+          <b>04<span>+</span></b>
+          <small>TECH AREAS</small>
+        </div>
+
+        <div class="stat">
+          <b>03<span>+</span></b>
+          <small>PROJECTS</small>
+        </div>
+
+        <div class="stat">
+          <b>∞</b>
+          <small>IDEAS</small>
+        </div>
+      </div>
+
+      <div class="scroll-hint">
+        <span class="scroll-icon">↓</span>
+        SCROLL TO EXPLORE
+      </div>
+
     </section>
-    <section id="about" class="section"><div class="section-heading"><span class="section-index">01 / PROFILE</span><h2>About <span>Me</span></h2></div>
-      <div class="about-grid"><article class="panel info-card"><div class="card-heading"><span class="cyan-icon">◉</span><h3>The Identity</h3></div><p>I'm Dipin Raj — a curious developer who enjoys turning ideas into practical digital projects. I explore software, web interfaces, APIs and creative automation.</p><div class="mini-tags"><span>CURIOUS</span><span>CREATIVE</span><span>BUILDING</span></div></article><article class="panel info-card"><div class="card-heading"><span class="cyan-icon">⌘</span><h3>The Direction</h3></div><p>My focus is learning by building: experimenting with new technologies, designing interfaces and creating tools that make digital experiences more useful.</p><div class="mini-tags"><span>SOFTWARE</span><span>UI / UX</span><span>APIs</span></div></article></div>
-      <div class="panel location-card"><div class="location-symbol">⌖</div><div><small>LOCATION</small><h3>Kerala, India</h3><p>Working and creating from the south of India.</p></div><span class="location-status">● ACTIVE</span></div>
+
+    <!-- ABOUT -->
+    <section id="about" class="section">
+
+      <div class="section-heading">
+        <span class="section-index">01 / PROFILE</span>
+        <h2>About <span>Me</span></h2>
+      </div>
+
+      <div class="about-grid">
+
+        <article class="panel info-card">
+          <div class="card-heading">
+            <span class="cyan-icon">◉</span>
+            <h3>The Identity</h3>
+          </div>
+
+          <p>
+            I'm Dipin Raj — a curious developer who enjoys turning ideas
+            into practical digital projects. I explore software, web
+            interfaces, APIs and creative automation.
+          </p>
+
+          <div class="mini-tags">
+            <span>CURIOUS</span>
+            <span>CREATIVE</span>
+            <span>BUILDING</span>
+          </div>
+        </article>
+
+        <article class="panel info-card">
+          <div class="card-heading">
+            <span class="cyan-icon">⌘</span>
+            <h3>The Direction</h3>
+          </div>
+
+          <p>
+            My focus is learning by building: experimenting with new
+            technologies, designing interfaces and creating tools that
+            make digital experiences more useful.
+          </p>
+
+          <div class="mini-tags">
+            <span>SOFTWARE</span>
+            <span>UI / UX</span>
+            <span>APIs</span>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- LOCATION -->
+      <div class="panel location-card">
+        <div class="location-symbol">⌖</div>
+
+        <div>
+          <small>LOCATION</small>
+          <h3>Kerala, India</h3>
+          <p>Working and creating from the south of India.</p>
+        </div>
+
+        <span class="location-status">● ACTIVE</span>
+      </div>
+
     </section>
-    <section id="skills" class="section"><div class="section-heading"><span class="section-index">02 / TOOLKIT</span><h2>Skills &amp; <span>Tech</span></h2></div><div class="skill-cloud panel"><p class="small-label">TECHNOLOGIES I EXPLORE</p><div class="chips"><span>PYTHON</span><span>HTML / CSS</span><span>JAVASCRIPT</span><span>API INTEGRATION</span><span>UI / UX</span><span>FLASK</span><span>GITHUB</span><span>AUTOMATION</span><span>WEB DESIGN</span><span>JSON</span></div></div><div class="skills-list"><div class="skill-row"><div><span>01</span> Python &amp; Automation</div><div class="skill-meter"><i style="width:78%"></i></div></div><div class="skill-row"><div><span>02</span> Web Development</div><div class="skill-meter"><i style="width:72%"></i></div></div><div class="skill-row"><div><span>03</span> API Integration</div><div class="skill-meter"><i style="width:68%"></i></div></div><div class="skill-row"><div><span>04</span> Interface Design</div><div class="skill-meter"><i style="width:65%"></i></div></div></div></section>
-    <section id="projects" class="section"><div class="section-heading"><span class="section-index">03 / WORK</span><h2>Featured <span>Projects</span></h2></div><div class="projects-grid"><article class="project-card panel"><div class="project-top"><span class="project-icon">♫</span><span class="project-code">PROJECT_001</span></div><h3>CLUBBY MUSIC</h3><p>Music request and playback automation concept with song search, queue handling and a custom interface.</p><div class="project-tags"><span>PYTHON</span><span>AUDIO</span><span>API</span></div><a href="#contact" class="project-link">PROJECT DETAILS <span>↗</span></a></article><article class="project-card panel"><div class="project-top"><span class="project-icon">◉</span><span class="project-code">PROJECT_002</span></div><h3>PULSE MUSIC</h3><p>A Spotify remote-player web interface exploring mobile-first controls, playback status and music discovery.</p><div class="project-tags"><span>FLASK</span><span>SPOTIFY</span><span>WEB</span></div><a href="#contact" class="project-link">PROJECT DETAILS <span>↗</span></a></article><article class="project-card panel"><div class="project-top"><span class="project-icon">⌁</span><span class="project-code">PROJECT_003</span></div><h3>CODE EXPERIMENTS</h3><p>Small tools, creative coding experiments, UI concepts and automation ideas built while learning.</p><div class="project-tags"><span>EXPERIMENTAL</span><span>LEARNING</span></div><a href="#contact" class="project-link">PROJECT DETAILS <span>↗</span></a></article></div></section>
-    <section id="certifications" class="section"><div class="section-heading"><span class="section-index">04 / JOURNEY</span><h2>Learning <span>Log</span></h2></div><div class="timeline panel"><div class="timeline-item"><span class="timeline-dot"></span><div><small>CONTINUOUS</small><h3>Self-directed learning</h3><p>Exploring software development, APIs, web technologies and interface design through hands-on projects.</p></div></div><div class="timeline-item"><span class="timeline-dot"></span><div><small>BUILD / EXPLORE</small><h3>Project-driven practice</h3><p>Learning new concepts by prototyping, testing ideas and refining personal projects.</p></div></div></div></section>
-    <section id="contact" class="section"><div class="section-heading"><span class="section-index">05 / CONNECT</span><h2>Contact <span>Terminal</span></h2></div><div class="contact-layout"><div class="contact-copy panel"><div class="terminal-title"><span class="terminal-dot"></span><span class="terminal-dot"></span><span class="terminal-dot"></span><small>connect.sh</small></div><p class="terminal-prompt">&gt; Initiate a connection...</p><p>Got an idea, project or collaboration in mind? Send a message and let's connect.</p><div class="contact-links"><a href="mailto:kaashinadh99@gmail.com"><span>✉</span> EMAIL <b>↗</b></a><a href="https://github.com/kaashinadh99-dev" target="_blank" rel="noopener"><span>⌘</span> GITHUB <b>↗</b></a><a href="https://instagram.com/3rr0r504" target="_blank" rel="noopener"><span>◎</span> INSTAGRAM <b>↗</b></a></div></div><form class="contact-form panel" id="contactForm"><label>YOUR NAME<input name="name" placeholder="Enter your name" required></label><label>EMAIL ADDRESS<input name="email" type="email" placeholder="you@example.com" required></label><label>SUBJECT<input name="subject" placeholder="What's this about?" required></label><label>MESSAGE<textarea name="message" rows="4" placeholder="Write your message..." required></textarea></label><button class="button primary submit-btn" type="submit">TRANSMIT MESSAGE <span>↗</span></button><p class="form-note" id="formNote">FORM // LOCAL MAIL CLIENT</p></form></div></section>
+
+    <!-- SKILLS -->
+    <section id="skills" class="section">
+
+      <div class="section-heading">
+        <span class="section-index">02 / TOOLKIT</span>
+        <h2>Skills &amp; <span>Tech</span></h2>
+      </div>
+
+      <div class="skill-cloud panel">
+        <p class="small-label">TECHNOLOGIES I EXPLORE</p>
+
+        <div class="chips">
+          <span>PYTHON</span>
+          <span>HTML / CSS</span>
+          <span>JAVASCRIPT</span>
+          <span>API INTEGRATION</span>
+          <span>UI / UX</span>
+          <span>FLASK</span>
+          <span>GITHUB</span>
+          <span>AUTOMATION</span>
+          <span>WEB DESIGN</span>
+          <span>JSON</span>
+        </div>
+      </div>
+
+      <div class="skills-list">
+
+        <div class="skill-row">
+          <div><span>01</span> Python &amp; Automation</div>
+          <div class="skill-meter"><i style="width:78%"></i></div>
+        </div>
+
+        <div class="skill-row">
+          <div><span>02</span> Web Development</div>
+          <div class="skill-meter"><i style="width:72%"></i></div>
+        </div>
+
+        <div class="skill-row">
+          <div><span>03</span> API Integration</div>
+          <div class="skill-meter"><i style="width:68%"></i></div>
+        </div>
+
+        <div class="skill-row">
+          <div><span>04</span> Interface Design</div>
+          <div class="skill-meter"><i style="width:65%"></i></div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects" class="section">
+
+      <div class="section-heading">
+        <span class="section-index">03 / WORK</span>
+        <h2>Featured <span>Projects</span></h2>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- PROJECT 1 -->
+        <article class="project-card panel">
+
+          <div class="project-top">
+            <span class="project-icon">♫</span>
+            <span class="project-code">PROJECT_001</span>
+          </div>
+
+          <h3>CLUBBY MUSIC</h3>
+
+          <p>
+            Music request and playback automation concept with song
+            search, queue handling and a custom interface.
+          </p>
+
+          <div class="project-tags">
+            <span>PYTHON</span>
+            <span>AUDIO</span>
+            <span>API</span>
+          </div>
+
+          <a href="#contact" class="project-link">
+            PROJECT DETAILS <span>↗</span>
+          </a>
+
+        </article>
+
+        <!-- PROJECT 2 -->
+        <article class="project-card panel">
+
+          <div class="project-top">
+            <span class="project-icon">◉</span>
+            <span class="project-code">PROJECT_002</span>
+          </div>
+
+          <h3>PULSE MUSIC</h3>
+
+          <p>
+            A Spotify remote-player web interface exploring mobile-first
+            controls, playback status and music discovery.
+          </p>
+
+          <div class="project-tags">
+            <span>FLASK</span>
+            <span>SPOTIFY</span>
+            <span>WEB</span>
+          </div>
+
+          <a href="#contact" class="project-link">
+            PROJECT DETAILS <span>↗</span>
+          </a>
+
+        </article>
+
+        <!-- PROJECT 3 -->
+        <article class="project-card panel">
+
+          <div class="project-top">
+            <span class="project-icon">⌁</span>
+            <span class="project-code">PROJECT_003</span>
+          </div>
+
+          <h3>CODE EXPERIMENTS</h3>
+
+          <p>
+            Small tools, creative coding experiments, UI concepts and
+            automation ideas built while learning.
+          </p>
+
+          <div class="project-tags">
+            <span>EXPERIMENTAL</span>
+            <span>LEARNING</span>
+          </div>
+
+          <a href="#contact" class="project-link">
+            PROJECT DETAILS <span>↗</span>
+          </a>
+
+        </article>
+
+      </div>
+
+    </section>
+
+    <!-- LEARNING JOURNEY -->
+    <section id="certifications" class="section">
+
+      <div class="section-heading">
+        <span class="section-index">04 / JOURNEY</span>
+        <h2>Learning <span>Log</span></h2>
+      </div>
+
+      <div class="timeline panel">
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+
+          <div>
+            <small>CONTINUOUS</small>
+            <h3>Self-directed learning</h3>
+
+            <p>
+              Exploring software development, APIs, web technologies
+              and interface design through hands-on projects.
+            </p>
+          </div>
+        </div>
+
+        <div class="timeline-item">
+          <span class="timeline-dot"></span>
+
+          <div>
+            <small>BUILD / EXPLORE</small>
+            <h3>Project-driven practice</h3>
+
+            <p>
+              Learning new concepts by prototyping, testing ideas
+              and refining personal projects.
+            </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="section">
+
+      <div class="section-heading">
+        <span class="section-index">05 / CONNECT</span>
+        <h2>Contact <span>Terminal</span></h2>
+      </div>
+
+      <div class="contact-layout">
+
+        <!-- CONTACT INFORMATION -->
+        <div class="contact-copy panel">
+
+          <div class="terminal-title">
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <span class="terminal-dot"></span>
+            <small>connect.sh</small>
+          </div>
+
+          <p class="terminal-prompt">
+            &gt; Initiate a connection...
+          </p>
+
+          <p>
+            Got an idea, project or collaboration in mind?
+            Send a message and let's connect.
+          </p>
+
+          <div class="contact-links">
+
+            <a href="mailto:dipin2486@gmail.com">
+              <span>✉</span> EMAIL <b>↗</b>
+            </a>
+
+            <a href="https://github.com/kaashinadh99-dev"
+               target="_blank" rel="noopener">
+              <span>⌘</span> GITHUB <b>↗</b>
+            </a>
+
+            <a href="https://instagram.com/3rr0r504"
+               target="_blank" rel="noopener">
+              <span>◎</span> INSTAGRAM <b>↗</b>
+            </a>
+
+          </div>
+
+        </div>
+
+        <!-- CONTACT FORM -->
+        <form class="contact-form panel" id="contactForm">
+
+          <label>
+            YOUR NAME
+            <input name="name" placeholder="Enter your name" required>
+          </label>
+
+          <label>
+            EMAIL ADDRESS
+            <input name="email" type="email"
+                   placeholder="you@gmail.com" required>
+          </label>
+
+          <label>
+            SUBJECT
+            <input name="subject"
+                   placeholder="What's this about?" required>
+          </label>
+
+          <label>
+            MESSAGE
+            <textarea name="message" rows="4"
+                      placeholder="Write your message..."
+                      required></textarea>
+          </label>
+
+          <button class="button primary submit-btn" type="submit">
+            TRANSMIT MESSAGE <span>↗</span>
+          </button>
+
+          <p class="form-note" id="formNote">
+            FORM // LOCAL MAIL CLIENT
+          </p>
+
+        </form>
+
+      </div>
+
+    </section>
+
   </main>
-  <footer class="footer"><div class="footer-brand">DIPIN<span>RAJ</span> <small>CYBER PORTFOLIO</small></div><p>Designed to explore. Built to create.</p><div class="footer-status"><span class="online-dot"></span> SYSTEM OPERATIONAL <span>© 2026</span></div></footer>
-  <nav class="bottom-nav" aria-label="Section navigation"><a class="nav-item active" href="#home"><span>⌂</span><small>HOME</small></a><a class="nav-item" href="#about"><span>◉</span><small>ABOUT</small></a><a class="nav-item" href="#skills"><span>⌘</span><small>SKILLS</small></a><a class="nav-item" href="#projects"><span>▣</span><small>WORK</small></a><a class="nav-item" href="#contact"><span>✉</span><small>CONTACT</small></a></nav>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+
+    <div class="footer-brand">
+      DIPIN<span>RAJ</span>
+      <small>CYBER PORTFOLIO</small>
+    </div>
+
+    <p>Designed to explore. Built to create.</p>
+
+    <div class="footer-status">
+      <span class="online-dot"></span>
+      SYSTEM OPERATIONAL
+      <span>© 2026</span>
+    </div>
+
+  </footer>
+
+  <!-- BOTTOM NAVIGATION -->
+  <nav class="bottom-nav" aria-label="Section navigation">
+
+    <a class="nav-item active" href="#home">
+      <span>⌂</span>
+      <small>HOME</small>
+    </a>
+
+    <a class="nav-item" href="#about">
+      <span>◉</span>
+      <small>ABOUT</small>
+    </a>
+
+    <a class="nav-item" href="#skills">
+      <span>⌘</span>
+      <small>SKILLS</small>
+    </a>
+
+    <a class="nav-item" href="#projects">
+      <span>▣</span>
+      <small>WORK</small>
+    </a>
+
+    <a class="nav-item" href="#contact">
+      <span>✉</span>
+      <small>CONTACT</small>
+    </a>
+
+  </nav>
+
+  <!-- JAVASCRIPT -->
   <script src="script.js"></script>
-</body></html>
+
+</body>
+</html>
